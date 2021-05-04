@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:title" content="인하대병원">
+    <meta property="og:url" content="./img/og_image.jpg">
+    <meta property="og:image" content="?">
+    <meta name="description" content="인하대학교의과대학부속병원에서는 환자들이 진료과, 전문클리닉, 전문센터의 의료진 정보를 통해 진료 예약을 할 수 있으며 인터넷증명서발급, 신규채용을 확인할수 있고 진료조회, 예약, 검사, 검진결과, 처방 등의 내역을 볼 수 있는 진료차트 서비스를 제공하고 있습니다.">
+    <meta name="_csrf_parameter" content="_csrf">
+    <meta name="_csrf_header" content="X-XSRF-TOKEN">
+    <meta name="_csrf" content="912767d5-0c4d-4fdb-aec6-11fd1cb1e9d4">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="../img/i_favicon.png">
+    <title>인하대병원 행동발달증진센터</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <script src="../js/jquery_v1.12.4.min.js"></script>
+
+</head>
+
+<body>
+    <!--skip-navigation-->
+    <a href="#contents" class="skip">본문바로가기</a>
+    <!--header 시작-->
+    <header class="header clearfix">
+        <h1 class="logo"><a href="./../index.html">인하대병원</a></h1>
+        <!--   <strong class="now">행동발달증진센터</strong>-->
+        <div class="header-right">
+            <div class="ham">
+                <span class="ham1">메뉴</span>
+            </div>
+        </div>
+    </header>
+    <!--aside-->
+    <div id="aside">
+        <div class="aside-wrap">
+            <div class="aside">
+                <ul class="nav">
+                    <li>
+                        <h2 class="sub-tit">센터소개</h2>
+                        <ul class="depth2">
+                            <li><a href="./../center/center_1.html">인사말</a></li>
+                            <li><a href="./../center/center_2.html">의료진 소개</a></li>
+                            <li><a href="./../center/center_3.html">치료진 소개</a></li>
+                            <li><a href="./../center/center_4.html">조직도</a></li>
+                            <li><a href="./../center/center_5.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="sub-tit">프로그램 소개</h2>
+                        <ul class="depth2">
+                            <li><a href="./../program/program_1.html">행동치료</a></li>
+                            <li><a href="./../program/program_2.html">언어치료</a></li>
+                            <li><a href="./../program/program_3.html">가족지원프로그램</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="sub-tit">진단 및 치료</h2>
+                        <ul class="depth2">
+                            <li><a href="./../check/check_1.html">의료진 시간표</a></li>
+                            <li><a href="./../check/check_2.html">진단 및 치료 절차</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="sub-tit">공지사항</h2>
+                        <ul class="depth2">
+                            <li><a href="./../border/border_1.html">공지사항</a></li>
+                            <li><a href="./../border/content_1.html">자료실</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="inha">
+                <a href="https://www.inha.com/m/page/main" target="_blank">인하대병원 바로가기</a>
+            </div>
+            <div class="aside-list">
+                <ul class="a-list clearfix">
+                    <li class="on"><a href="./../policy/aggrement.html">개인정보처리방침</a></li>
+                    <li><a href="./../policy/policy.html">이용약관</a></li>
+                    <li><a href="./../policy/right.html">환자의권리와의무</a></li>
+                    <li><a href="https://www.inha.com/site/bdc/main" target="_blank">PC버전 바로가기</a></li>
+                </ul>
+            </div>
+            <div class="a-infor">
+                <ul class="infor1">
+                    <li class="infor-tit">전화예약 및 문의</li>
+                    <li><span>032-890-200 / 1600-8114</span> (평일 09:00~ 17:30, 주말 및 공휴일 휴무)</li>
+                </ul>
+                <ul class="infor2">
+                    <li class="infor-tit">주소</li>
+                    <li>인천광역시 중구 인항로 27(신흥동 3가 7-206) 인하대병원(우) 22332</li>
+                    <li><a href="./center/center_5.html" target="_blank">오시는길</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--aside-script-->
+    <script>
+        $(document).ready(function() {
+            /*ham script*/
+            $('.nav li').click(function() {
+                $(this).find('.depth2').toggleClass('on'); /*$(this).find('.depth2').stop().slideDown(300);*/
+                $(this).find('.sub-tit').toggleClass('on');
+                $(this).toggleClass('on')
+                /*  $(this).siblings().removeClass('on');*/
+            })
+
+            $('.nav li').click(function() {
+                $(this).siblings().removeClass('on')
+                $(this).siblings().find('.depth2').removeClass('on');
+                $(this).siblings().find('.sub-tit').removeClass('on');
+            })
+
+            $('.header-right').click(function() {
+                /*$('#aside').toggleClass('on');*/
+                $('#aside').toggleClass('on')
+                $('.ham').toggleClass('on')
+
+            })
+        });
+
+        $('.aside-wrap .a-list > li').mouseover(function() {
+            $('.aside-wrap .a-list').find('li').addClass('on');
+            $(this).siblings().removeClass('on');
+
+        })
+    </script>
+    <!--popup-->
+    <div class="go-top">
+        <a href="#">go-top</a>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(window).load(function() {
+                $('.go-top').fadeIn(300)
+            })
+
+        })
+    </script>
+    <div class="quick-location">
+        <a href="./center/center_5.html">오시는길</a>
+    </div>
+    <div class="quick-call">
+        <a href="tel:032-890-1051" onclick="document.location.href='tel:032-890-1051'">고객센터</a>
+    </div>
+    <!--popup-->
+
+
+
+
+    <!--main-->
+    <div class="location" onclick="location.href='./../index.html'">
+        <h2 class="sub-m-tit">오시는 길</h2>
+    </div>
+    <div class="center inner" style="margin-bottom: 80px">
+        <!--map api-->
+        <div class="map_wrap">
+            <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
+            <!-- 지도타입 컨트롤 div 입니다 -->
+            <!-- 지도 확대, 축소 컨트롤 div 입니다 -->
+            <div class="custom_zoomcontrol radius_border">
+                <span onclick="zoomIn()"><img src="../img/map_plus.png" alt="확대"></span>
+                <span onclick="zoomOut()"><img src="../img/map_minus.png" alt="축소"></span>
+            </div>
+        </div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f6147d317a5d228a2ffa406394ac6564"></script>
+        <script>
+            var container = document.getElementById('map');
+            var options = {
+                center: new kakao.maps.LatLng(37.45881964390363, 126.63416428872313),
+                level: 3
+            };
+
+            var map = new kakao.maps.Map(container, options);
+
+            var mapTypeControl = new kakao.maps.MapTypeControl();
+            map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+            var markerPosition = new kakao.maps.LatLng(1, 1);
+
+            // 마커를 생성합니다
+            // 마커가 표시될 위치입니다 
+            var markerPosition = new kakao.maps.LatLng(37.45881964390363, 126.63416428872313);
+
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+
+            // 마커가 지도 위에 표시되도록 설정합니다
+            marker.setMap(map);
+
+            // 마커가 드래그 가능하도록 설정합니다 
+            marker.setDraggable(true);
+
+            // 지도타입 컨트롤의 지도 또는 스카이뷰 버튼을 클릭하면 호출되어 지도타입을 바꾸는 함수입니다
+            function setMapType(maptype) {
+                var roadmapControl = document.getElementById('btnRoadmap');
+                var skyviewControl = document.getElementById('btnSkyview');
+                if (maptype === 'roadmap') {
+                    map.setMapTypeId(kakao.maps.MapTypeId.ROADMAP);
+                    roadmapControl.className = 'selected_btn';
+                    skyviewControl.className = 'btn';
+                } else {
+                    map.setMapTypeId(kakao.maps.MapTypeId.HYBRID);
+                    skyviewControl.className = 'selected_btn';
+                    roadmapControl.className = 'btn';
+                }
+            }
+
+            // 지도 확대, 축소 컨트롤에서 확대 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+            function zoomIn() {
+                map.setLevel(map.getLevel() - 1);
+            }
+
+            // 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+            function zoomOut() {
+                map.setLevel(map.getLevel() + 1);
+            }
+        </script>
+        <!--map api-->
+        <div class="map-btn clearfix">
+            <input type="button" class="btn1" id="btn1" value="주소복사" onclick="javascript:CopyUrl()">
+            <input type="button" class="btn2" id="btn2" onclick="window.open('https://m.map.kakao.com/')" value="빠른 길 찾기">
+        </div>
+        <script>
+            function CopyUrl() {
+                var Url = document.getElementById('btn1');
+                var copyText = '인천광역시 중구 인항로 27 (신흥동 3가 7-206) 인하대병원';
+                Url.select();
+                document.execCommand(copyText);
+                Url.blur();
+                alert('주소를 복사했습니다');
+            }
+        </script>
+        <div class="accordion">
+            <ul class="acc-wrap clearfix">
+                <li>
+                    <h3 class="acc-tit"><a href="#">시내버스</a></h3>
+                    <ul class="acc-location">
+                        <li>
+                            <span class="number">5</span>
+                            운연역 – 남인천세무서 – 신세계백화점(인천터미널) – 인하대역 – 옹진군청 – <em>인하대병원</em>
+                        </li>
+                        <li>
+                            <span class="number">9</span>
+                            무지개아파트(동남아파트) – 동막역 – 인천가톨릭대 – 더샵하버뷰
+                            – 인하대역 – <em>인하대병원</em>
+                        </li>
+                        <li>
+                            <span class="number">12</span>
+                            항동7가버스차고지 – 국제여객터미널 – 수협(인천해양센터) – 항운아파트 – <em>인하대병원</em>
+                        </li>
+                        <li>
+                            <span class="number">13</span>
+                            신흥교통 – CJ인천2공장 – 신선초등학교 – <em>인하대병원</em>
+                        </li>
+                        <li>
+                            <span class="number">14</span>
+                            항동7가버스차고지 – 풍물시장 – 연안여객터미널 – 연안초등학교 – 옹진군청 –<em>인하대병원</em>
+                        </li>
+                        <li>
+                            <span class="number">16</span>
+                            무지개아파트(동남아파트) – 연세대 – 해양경찰청 – 송도역 – 교통방송사거리 – 옹진군청 – <em>인하대병원</em>
+                        </li>
+                        <li>
+                            <span class="number">24</span>
+                            국제여객터미널 – 연안부두어시장 – 남항부두 – 신선초등학교 – <em>인하대병원</em>
+                        </li>
+                        <li>
+                            <span class="number">27</span>
+                            무월곶 – 소래포구입구 – 신세계백화점(인천터미널) – 문학경기장 – 인하대역 – 옹진군청 – <em>인하대병원</em>
+                        </li>
+                        <li>
+                            <span class="number">33</span>
+                            항동7가버스차고지 – 연안어시장 – 수협(인천해양센터) – 신선초등학교 – <em>인하대병원</em>
+                        </li>
+                        <li>
+                            <span class="number">36</span>
+                            항동7가버스차고지 – 연안여객터미널 – 남항부두 – 신선초등학교 – <em>인하대병원</em>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="acc-tit"><a href="#">마을버스</a></h3>
+                    <ul class="acc-location">
+                        <li>
+                            <span class="number number2">517</span>
+                            동인천 - 신포시장 - 출입국 관리 사무소 - <em class="color">인하대병원</em>
+                        </li>
+                        <li>
+                            <span class="number number2">519</span>
+                            동인천 - 신포시장 - 송도중학교 - 신흥시장 - <em class="color">엑슬루타워</em>
+                        </li>
+                        <li>
+                            <span class="number number2">521</span>
+                            옥련중학교 – 옥련2동주민센터(옥련우체국) – 인천해양과학고 – 경인방송 – <em class="color">숭의역</em>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="acc-tit"><a href="#">광역버스</a></h3>
+                    <ul class="acc-location">
+                        <li>
+                            <span class="number number3">910</span>
+                            강남역서초현대타워앞 – 하늘휴게소 – 선바위역 – 하늘휴게소 – 남동구청역 – 제물포역 – <em class="color1">숭의역</em>
+                        </li>
+                        <li>
+                            <span class="number number3">R8850</span>
+                            수원공용버스터미널 – 수원역 – 목감사거리 – 인천시청후문 – 제물포역 – <em class="color1">숭의역</em>
+                        </li>
+                        <li>
+                            <span class="number number3">R8851</span>
+                            수원공용버스터미널 – 수원역 – 목감사거리– 인천시청후문 – 제물포역 – <em class="color1">숭의역</em>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <h3 class="acc-tit"><a href="#">지하철</a></h3>
+                    <ul class="acc-location">
+                        <li class="subway-txt">
+                            <span class="number number4">1호선</span>
+                            <!--<p class="subway">제물포역 또는 동인천역</p>-->
+                            제물포역, 동인천역 하차 후 버스 또는 택시 이용
+                        </li>
+                        <li class="subway-txt">
+                            <span class="number number4">1호선</span>
+                            <!-- <p class="subway">제물포역 또는 동인천역</p>-->
+                            수인선 환승 (오이도역 방향)
+                        </li>
+                        <li class="subway-txt">
+                            <span class="number number5">수인분당선</span>
+                            <!--<p class="subway">제물포역 또는 동인천역</p>-->
+                            숭의(인하대병원)역 2번출구
+                        </li>
+                        <li class="subway-txt">
+                            <span class="number number6">인천 1호선</span>
+                            <!--    <p class="subway">제물포역 또는 동인천역</p>-->
+                            원인재역에서 수인분당선 환성
+
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <h3 class="acc-tit"><a href="#">자가용</a></h3>
+                    <ul class="acc-location">
+                        <li class="car-txt">
+                            <span class="number car">서울, 부천방면</span>
+                            제1경인고속도로 종점 → 직진하여 우측
+                        </li>
+                        <li class="car-txt">
+                            <span class="number car">서산, 태안방면</span>
+
+                            서해안 고속도로 → 안산 분기점 → 영동고속도로 → 서창 분기점 → 제2경인 고속도로 → 종점에서 우회전 → 제1경인고속도로 입구 → 좌회전하여 우측
+                        </li>
+                        <li class="car-txt">
+                            <span class="number car">성남, 분당방면</span>
+                            서울외곽순환고속도로 → 안현 분기점→ 제2경인고속도로 → 종점에서 우회전 → 제1경인고속도로 입구 → 좌회전하여 우측
+                        </li>
+                        <li class="car-txt">
+                            <span class="number car">안양, 안산방면</span>
+
+                            제 2경인고속도로 → 종점에서 우회전 → 제1경인고속도로 입구 → 좌회전하여 우측
+                        </li>
+                        <li class="car-txt">
+                            <span class="number car">용인, 이천방면</span>
+                            영동고속도로 → 서창 분기점 → 제2경인고속도로 → 종점에서 우회전 → 제1경인고속도로 입구 → 좌회전하여 우측
+                        </li>
+                        <li class="car-txt">
+                            <span class="number car">일산방면</span>
+                            수도권 제1순환고속도로 → 서운 분기점 → 제1경인고속도로 종점 → 직진하여 우측
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+
+            $('.acc-wrap > li').click(function() {
+                $(this).find('.acc-location').toggleClass('on');
+                $(this).find('.acc-tit').addClass('on')
+                $(this).toggleClass('on')
+
+            });
+
+            $('.acc-wrap > li').click(function() {
+                $(this).siblings().find('.acc-location').removeClass('on');
+                /*  $(this).find('.acc-tit').siblings().removeClass('on')*/
+
+            });
+            $('.acc-wrap > li .acc-tit > a ').click(function(e) {
+                e.preventDefault();
+            })
+
+
+        })
+    </script>
+</body>
+
+</html>

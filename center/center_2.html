@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:title" content="인하대병원">
+    <meta property="og:url" content="./../img/og_image.jpg">
+    <meta property="og:image" content="?">
+    <meta name="description" content="인하대학교의과대학부속병원에서는 환자들이 진료과, 전문클리닉, 전문센터의 의료진 정보를 통해 진료 예약을 할 수 있으며 인터넷증명서발급, 신규채용을 확인할수 있고 진료조회, 예약, 검사, 검진결과, 처방 등의 내역을 볼 수 있는 진료차트 서비스를 제공하고 있습니다.">
+    <meta name="_csrf_parameter" content="_csrf">
+    <meta name="_csrf_header" content="X-XSRF-TOKEN">
+    <meta name="_csrf" content="912767d5-0c4d-4fdb-aec6-11fd1cb1e9d4">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="../../img/i_favicon.png">
+    <title>인하대병원 행동발달증진센터</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <script src="../js/jquery_v1.12.4.min.js"></script>
+
+</head>
+
+<body>
+    <!--skip-navigation-->
+    <a href="#contents" class="skip">본문바로가기</a>
+    <!--header 시작-->
+    <header class="header clearfix">
+        <h1 class="logo"><a href="./../index.html">인하대병원</a></h1>
+        <!--<strong class="now">행동발달증진센터</strong>-->
+        <div class="header-right">
+            <div class="ham">
+                <span class="ham1">메뉴</span>
+            </div>
+        </div>
+    </header>
+    <!--aside-->
+    <div id="aside">
+        <div class="aside-wrap">
+            <div class="aside">
+                <ul class="nav">
+                    <li>
+                        <h2 class="sub-tit">센터소개</h2>
+                        <ul class="depth2">
+                            <li><a href="./../center/center_1.html">인사말</a></li>
+                            <li><a href="./../center/center_2.html">의료진 소개</a></li>
+                            <li><a href="./../center/center_3.html">치료진 소개</a></li>
+                            <li><a href="./../center/center_4.html">조직도</a></li>
+                            <li><a href="./../center/center_5.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="sub-tit">프로그램 소개</h2>
+                        <ul class="depth2">
+                            <li><a href="./../program/program_1.html">행동치료</a></li>
+                            <li><a href="./../program/program_2.html">언어치료</a></li>
+                            <li><a href="./../program/program_3.html">가족지원프로그램</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="sub-tit">진단 및 치료</h2>
+                        <ul class="depth2">
+                            <li><a href="./../check/check_1.html">의료진 시간표</a></li>
+                            <li><a href="./../check/check_2.html">진단 및 치료 절차</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="sub-tit">공지사항</h2>
+                        <ul class="depth2">
+                             <li><a href="./../border/border_1.html">공지사항</a></li>
+                            <li><a href="./../border/content_1.html">자료실</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="inha">
+                <a href="https://www.inha.com/m/page/main" target="_blank">인하대병원 바로가기</a>
+            </div>
+            <div class="aside-list">
+                <ul class="a-list clearfix">
+                     <li class="on"><a href="./../policy/aggrement.html">개인정보처리방침</a></li>
+                    <li><a href="./../policy/policy.html">이용약관</a></li>
+                    <li><a href="./../policy/right.html">환자의권리와의무</a></li>
+                    <li><a href="https://www.inha.com/site/bdc/main" target="_blank">PC버전 바로가기</a></li>
+                </ul>
+            </div>
+            <div class="a-infor">
+                <ul class="infor1">
+                    <li class="infor-tit">전화예약 및 문의</li>
+                    <li><span>032-890-200 / 1600-8114</span> (평일 09:00~ 17:30, 주말 및 공휴일 휴무)</li>
+                </ul>
+                <ul class="infor2">
+                    <li class="infor-tit">주소</li>
+                    <li>인천광역시 중구 인항로 27(신흥동 3가 7-206) 인하대병원(우) 22332</li>
+                    <li><a href="./../center/center_5.html" target="_blank">오시는길</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--aside-script-->
+    <script>
+        $(document).ready(function() {
+            /*ham script*/
+            $('.nav li').click(function() {
+                $(this).find('.depth2').toggleClass('on'); /*$(this).find('.depth2').stop().slideDown(300);*/
+                $(this).find('.sub-tit').toggleClass('on');
+                $(this).toggleClass('on')
+                /*  $(this).siblings().removeClass('on');*/
+            })
+
+            $('.nav li').click(function() {
+                $(this).siblings().removeClass('on')
+                $(this).siblings().find('.depth2').removeClass('on');
+                $(this).siblings().find('.sub-tit').removeClass('on');
+            })
+
+            $('.header-right').click(function() {
+                /*$('#aside').toggleClass('on');*/
+                $('#aside').toggleClass('on')
+                $('.ham').toggleClass('on')
+
+            })
+        });
+        
+        $('.aside-wrap .a-list > li').mouseover(function(){
+            $('.aside-wrap .a-list').find('li').addClass('on');
+            $(this).siblings().removeClass('on');
+   
+        })
+            
+    </script>
+    <!--popup-->
+    <div class="go-top">
+        <a href="#">go-top</a>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(window).load(function() {
+                $('.go-top').fadeIn(300)
+            })
+
+        })
+    </script>
+    <div class="quick-location">
+        <a href="./../center/center_5.html">오시는길</a>
+    </div>
+    <div class="quick-call">
+        <a href="tel:032-890-1051" onclick="document.location.href='tel:032-890-1051'">고객센터</a>
+    </div>
+    <!--popup-->
+
+
+    <!--main-->
+    <div class="location" onclick="location.href='./../index.html'">
+        <h2 class="sub-m-tit">의료진 소개</h2>
+    </div>
+       <p class="sub-txt inner">인하대병원 행동발달증진센터는 센터 전담의료진 및 결과판정 전문의를 통해 긴밀하고 전문화된 의료 서비스를 제공 받으실 수 있습니다.
+
+        </p>
+    <div class="introduce inner" style="margin-bottom: 80px">
+        <div class="intro1">
+            <img src="../img/intro1.png" alt="">
+            <a href="./center_2_1.html">바로가기</a>
+        </div>
+         <div class="intro2">
+            <img src="../img/intro2.png" alt="">
+            <a href="./center_2_2.html">바로가기</a>
+        </div>
+         <div class="intro3">
+            <img src="../img/intro3.png" alt="">
+            <a href="./center_2_3.html">바로가기</a>
+        </div>
+         
+         
+
+        </div>
+      
+
+</body>
+
+</html>

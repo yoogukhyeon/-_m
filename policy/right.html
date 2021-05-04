@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:title" content="인하대병원">
+    <meta property="og:url" content="./../img/og_image.jpg">
+    <meta property="og:image" content="?">
+    <meta name="description" content="인하대학교의과대학부속병원에서는 환자들이 진료과, 전문클리닉, 전문센터의 의료진 정보를 통해 진료 예약을 할 수 있으며 인터넷증명서발급, 신규채용을 확인할수 있고 진료조회, 예약, 검사, 검진결과, 처방 등의 내역을 볼 수 있는 진료차트 서비스를 제공하고 있습니다.">
+    <meta name="_csrf_parameter" content="_csrf">
+    <meta name="_csrf_header" content="X-XSRF-TOKEN">
+    <meta name="_csrf" content="912767d5-0c4d-4fdb-aec6-11fd1cb1e9d4">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="../../img/i_favicon.png">
+    <title>인하대병원 행동발달증진센터</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/policy.css">
+
+    <script src="../js/jquery_v1.12.4.min.js"></script>
+
+</head>
+
+<body>
+    <!--skip-navigation-->
+    <a href="#contents" class="skip">본문바로가기</a>
+    <!--header 시작-->
+    <header class="header clearfix">
+        <h1 class="logo"><a href="./../index.html">인하대병원</a></h1>
+        <!--<strong class="now">행동발달증진센터</strong>-->
+        <div class="header-right">
+            <div class="ham">
+                <span class="ham1">메뉴</span>
+            </div>
+        </div>
+    </header>
+    <!--aside-->
+    <div id="aside">
+        <div class="aside-wrap">
+            <div class="aside">
+                <ul class="nav">
+                    <li>
+                        <h2 class="sub-tit">센터소개</h2>
+                        <ul class="depth2">
+                            <li><a href="./../center/center_1.html">인사말</a></li>
+                            <li><a href="./../center/center_2.html">의료진 소개</a></li>
+                            <li><a href="./../center/center_3.html">치료진 소개</a></li>
+                            <li><a href="./../center/center_4.html">조직도</a></li>
+                            <li><a href="./../center/center_5.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="sub-tit">프로그램 소개</h2>
+                        <ul class="depth2">
+                            <li><a href="./../program/program_1.html">행동치료</a></li>
+                            <li><a href="./../program/program_2.html">언어치료</a></li>
+                            <li><a href="./../program/program_3.html">가족지원프로그램</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="sub-tit">진단 및 치료</h2>
+                        <ul class="depth2">
+                            <li><a href="./../check/check_1.html">의료진 시간표</a></li>
+                            <li><a href="./../check/check_2.html">진단 및 치료 절차</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="sub-tit">공지사항</h2>
+                        <ul class="depth2">
+                               <li><a href="./../border/border_1.html">공지사항</a></li>
+                            <li><a href="./../border/content_1.html">자료실</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="inha">
+                <a href="https://www.inha.com/m/page/main" target="_blank">인하대병원 바로가기</a>
+            </div>
+            <div class="aside-list">
+                <ul class="a-list clearfix">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">환자의권리와의무</a></li>
+                    <li><a href="https://www.inha.com/site/bdc/main" target="_blank">PC버전 바로가기</a></li>
+                </ul>
+            </div>
+            <div class="a-infor">
+                <ul class="infor1">
+                    <li class="infor-tit">전화예약 및 문의</li>
+                    <li><span>032-890-200 / 1600-8114</span> (평일 09:00~ 17:30, 주말 및 공휴일 휴무)</li>
+                </ul>
+                <ul class="infor2">
+                    <li class="infor-tit">주소</li>
+                    <li>인천광역시 중구 인항로 27(신흥동 3가 7-206) 인하대병원(우) 22332</li>
+                    <li><a href="./../center/center_5.html" target="_blank">오시는길</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--aside-script-->
+    <script>
+        $(document).ready(function() {
+         /*ham script*/
+            $('.nav li').click(function() {
+                $(this).find('.depth2').toggleClass('on'); /*$(this).find('.depth2').stop().slideDown(300);*/
+                $(this).find('.sub-tit').toggleClass('on');
+                $(this).toggleClass('on')
+                /*  $(this).siblings().removeClass('on');*/
+            })
+
+            $('.nav li').click(function() {
+                $(this).siblings().removeClass('on')
+                $(this).siblings().find('.depth2').removeClass('on');
+                $(this).siblings().find('.sub-tit').removeClass('on');
+            })
+
+            $('.header-right').click(function() {
+                /*$('#aside').toggleClass('on');*/
+                $('#aside').toggleClass('on')
+                $('.ham').toggleClass('on')
+
+            })
+        });
+        $('.aside-wrap .a-list > li').mouseover(function() {
+            $('.aside-wrap .a-list').find('li').addClass('on');
+            $(this).siblings().removeClass('on');
+        })
+    </script>
+    <!--popup-->
+    <div class="go-top">
+        <a href="#">go-top</a>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(window).load(function() {
+                $('.go-top').fadeIn(300)
+            })
+
+        })
+    </script>
+    <div class="quick-location">
+        <a href="./../center/center_5.html">오시는길</a>
+    </div>
+    <div class="quick-call">
+        <a href="tel:032-890-1051" onclick="document.location.href='tel:032-890-1051'">고객센터</a>
+    </div>
+    <!--popup-->
+
+
+    <!--main-->
+    <div class="location" onclick="location.href='./../index.html'">
+        <h2 class="sub-m-tit">개인정보처리방침</h2>
+    </div>
+    <div class="right inner" style="margin-top: 30px; margin-bottom: 80px">
+        <div class="right-txt">
+            <p class="text-top">인하대병원은 인류의 건강과 행복한 삶을 책임지는 의료기관으로서 최상의 진료, 연구, 교육을 통해 <span>인간존중</span>,
+                <span>공존공영</span>, <span>고객만족</span>을 실천한다.<br>환자의 권리와 의무는 병원을 이용하는 환자, 보호자의 권리와 의무를 구체적으로
+                명시하여<br>환자의 권리를 증진시키고 최선의 의료서비스를 제공하는데 목적이 있다.
+            </p>
+
+            <h2 class="privacy-tit">환자의 권리</h2>
+            <h3 class="text-style1">진료받을 권리</h3>
+            <p class="text-style2">환자는 자신의 건강보호를 위해 적절한 보건의료서비스를 받고, 성별·나이·종교·신분·경제적 사정 등을 이유로 이를 침해 받지 아니하며, 의료인은 정당한 사유 없이 진료를 거부하지
+                못한다.</p>
+            <h3 class="text-style1">알 권리 및 자기결정권</h3>
+            <p class="text-style2">환자는 담당 의사·간호사로부터 질병상태, 치료방법·예상결과(부작용 등), 진료비용에 대해 충분한 설명을 듣고 또 자세히 물어볼 수 있으며, 치료방법에 대해 동의여부를 결정할 권리를
+                가진다.</p>
+            <h3 class="text-style1">비밀을 보호 받을 권리</h3>
+            <p class="text-style2">환자는 진료와 관련된 신체상·건강상 비밀을 보호받으며, 의료인과 의료기관은 환자의 동의를 받지 않거나 범죄수사 등 법률이 정한 경우 외에는 비밀을 누설·발표하지 못한다.</p>
+            <h3 class="text-style1">피해를 구제받을 권리</h3>
+            <p class="text-style2">환자는 권리를 침해 받아 생명·신체적·금전적 피해가 발생한 경우 내부기관(병원 내 전담부서) 또는 외부기관(한국소비자원, 한국의료분쟁조정 중재원 등)에 상담 및 조정을 신청할 권리를
+                가진다.</p>
+            <h3 class="text-style1">가치관이나 신념을 존중 받을 권리</h3>
+            <p class="text-style2">환자는 문화적, 종교적 가치관이나 신념 등의 이유로 차별 받거나 권리를 침해 받지 않는다.</p>
+            <h2 class="privacy-tit">환자의 의무</h2>
+            <h3 class="text-style1">의료진에 대한 신뢰 및 존중 의무</h3>
+            <p class="text-style2">환자는 자신의 건강관련 정보를 의료진에게 정확히 알리고, 의료인의 치료계획에 대해 신뢰하고 존중하여야 한다.</p>
+            <h3 class="text-style1">부정한 방법으로 진료를 받지 않을 의무</h3>
+            <p class="text-style2">환자는 진료 전에 본인의 신분을 밝혀야 하고, 타인의 명의로 진료를 받는 등 거짓이나 부정한 방법으로 진료를 받지 아니한다.</p>
+            <h3 class="text-style1">병원 내 관련 규정 준수 의무</h3>
+            <p class="text-style2">환자는 병원 내 관련 규정을 준수하고 병원직원과 다른 환자를 존중하여야 하며 병원과 체결된 재정적 의무를 이행하여야 한다.</p>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    </div>
+</body>
+
+</html>
