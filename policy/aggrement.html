@@ -22,25 +22,45 @@
     <link rel="stylesheet" href="../css/sub.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/policy.css">
-    
+
     <script src="../js/jquery_v1.12.4.min.js"></script>
 
 </head>
 
 <body>
+
+    <!--sub-header-common-->
+
     <!--skip-navigation-->
     <a href="#contents" class="skip">본문바로가기</a>
-    <!--header 시작-->
+    <!--skip-navigation-->
+
+
+
+
+
+
+
+
+    <!--*****header 시작*****-->
     <header class="header clearfix">
         <h1 class="logo"><a href="./../index.html">인하대병원</a></h1>
-       <!-- <strong class="now">행동발달증진센터</strong>-->
+        <!-- <strong class="now">행동발달증진센터</strong>-->
         <div class="header-right">
             <div class="ham">
                 <span class="ham1">메뉴</span>
             </div>
         </div>
     </header>
-    <!--aside-->
+    <!--*****header*****-->
+
+
+
+
+
+
+
+    <!--*****ham aside 시작*****-->
     <div id="aside">
         <div class="aside-wrap">
             <div class="aside">
@@ -73,13 +93,11 @@
                     <li>
                         <h2 class="sub-tit">공지사항</h2>
                         <ul class="depth2">
-                              <li><a href="./../border/border_1.html">공지사항</a></li>
+                            <li><a href="./../border/border_1.html">공지사항</a></li>
                             <li><a href="./../border/content_1.html">자료실</a></li>
                         </ul>
                     </li>
-
                 </ul>
-
             </div>
             <div class="inha">
                 <a href="https://www.inha.com/m/page/main" target="_blank">인하대병원 바로가기</a>
@@ -105,10 +123,12 @@
             </div>
         </div>
     </div>
-    <!--aside-script-->
+    <!--*****ham aside*****-->
+
+    <!--*****aside-script*****-->
     <script>
         $(document).ready(function() {
-         /*ham script*/
+            /*ham script*/
             $('.nav li').click(function() {
                 $(this).find('.depth2').toggleClass('on'); /*$(this).find('.depth2').stop().slideDown(300);*/
                 $(this).find('.sub-tit').toggleClass('on');
@@ -129,21 +149,29 @@
 
             })
         });
-        
-            $('.aside-wrap .a-list > li').mouseover(function() {
+
+        $('.aside-wrap .a-list > li').mouseover(function() {
             $('.aside-wrap .a-list').find('li').addClass('on');
-          
+
 
         });
-           $('.aside-wrap .a-list > li').mouseout(function() {
-             $(this).siblings().removeClass('on');
+        $('.aside-wrap .a-list > li').mouseout(function() {
+            $(this).siblings().removeClass('on');
 
         });
     </script>
-    <!--popup-->
+    <!--*****aside-script*****-->
+
+
+
+
+
+    <!--*****popup*****-->
     <div class="go-top">
         <a href="#">go-top</a>
     </div>
+
+    <!--*****popup-script*****-->
     <script>
         $(document).ready(function() {
             $(window).load(function() {
@@ -152,16 +180,20 @@
 
         })
     </script>
+
+
+    <!--*****popup*****-->
     <div class="quick-location">
         <a href="./../center/center_5.html">오시는길</a>
     </div>
     <div class="quick-call">
         <a href="tel:032-890-1051" onclick="document.location.href='tel:032-890-1051'">고객센터</a>
     </div>
-    <!--popup-->
+    <!--*****popup*****-->
 
 
-    <!--main-->
+    <!--*****sub-main 시작*****-->
+    <!--*****sub-main*****-->
     <div class="location" onclick="location.href='./../index.html'">
         <h2 class="sub-m-tit">개인정보처리방침</h2>
     </div>
@@ -567,15 +599,6 @@
                 <li><span>3 )</span>병원이 진행하는 각종 행사에서 귀하의 참여 정도 및 방문 회수를 파악하여 차별적인 응모 기회를 부여하고 개인의 관심 분야에 따라 차별화된 정보를 제공하기 위한 자료로 이용합니다.<br>
                     귀하는 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서, 귀하는 웹 브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다. 회원님께서 쿠키 설치를 거부하셨을 경우 일부 서비스 제공에 어려움이 있습니다.</li>
             </ul>
-
-
-
-
-
-
-
-
-
 
             <!-- 10. 영상정보처리기기 운영 및 관리 사항 -->
             <h2 class="privacy-tit">

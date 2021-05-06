@@ -27,19 +27,39 @@
 </head>
 
 <body>
+
+
+
     <!--skip-navigation-->
     <a href="#contents" class="skip">본문바로가기</a>
-    <!--header 시작-->
+    <!--skip-navigation-->
+
+
+
+
+
+    <!--*****header 시작*****-->
     <header class="header clearfix">
         <h1 class="logo"><a href="./../index.html">인하대병원</a></h1>
-        <!--   <strong class="now">행동발달증진센터</strong>-->
+        <!-- <strong class="now">행동발달증진센터</strong>-->
         <div class="header-right">
             <div class="ham">
                 <span class="ham1">메뉴</span>
             </div>
         </div>
     </header>
-    <!--aside-->
+    <!--*****header*****-->
+
+
+
+
+
+
+
+
+
+
+    <!--*****ham aside 시작*****-->
     <div id="aside">
         <div class="aside-wrap">
             <div class="aside">
@@ -76,9 +96,7 @@
                             <li><a href="./../border/content_1.html">자료실</a></li>
                         </ul>
                     </li>
-
                 </ul>
-
             </div>
             <div class="inha">
                 <a href="https://www.inha.com/m/page/main" target="_blank">인하대병원 바로가기</a>
@@ -104,7 +122,9 @@
             </div>
         </div>
     </div>
-    <!--aside-script-->
+    <!--*****ham aside 시작*****-->
+
+    <!--*****aside-script*****-->
     <script>
         $(document).ready(function() {
             /*ham script*/
@@ -129,17 +149,20 @@
             })
         });
 
-         $('.aside-wrap .a-list > li').mouseover(function() {
+        $('.aside-wrap .a-list > li').mouseover(function() {
             $('.aside-wrap .a-list').find('li').addClass('on');
-          
+
 
         });
-           $('.aside-wrap .a-list > li').mouseout(function() {
-             $(this).siblings().removeClass('on');
+        $('.aside-wrap .a-list > li').mouseout(function() {
+            $(this).siblings().removeClass('on');
 
         });
     </script>
-    <!--popup-->
+    <!--*****aside-script*****-->
+
+
+    <!--*****popup*****-->
     <div class="go-top">
         <a href="#">go-top</a>
     </div>
@@ -151,23 +174,49 @@
 
         })
     </script>
+    <!--*****popup*****-->
+
+    <!--*****popup*****-->
     <div class="quick-location">
         <a href="./center/center_5.html">오시는길</a>
     </div>
     <div class="quick-call">
         <a href="tel:032-890-1051" onclick="document.location.href='tel:032-890-1051'">고객센터</a>
     </div>
-    <!--popup-->
+    <!--*****popup*****-->
 
 
 
 
-    <!--main-->
+
+
+
+
+
+
+    <!--*****sub-main 시작*****-->
+    <!--*****sub-main*****-->
     <div class="location" onclick="location.href='./../index.html'">
         <h2 class="sub-m-tit">오시는 길</h2>
     </div>
+
+
+
+
+
+
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <!--kakao Api 코드-->
+
+
+
     <div class="center inner" style="margin-bottom: 80px">
-        <!--map api-->
+        <!--*****map api*****-->
         <div class="map_wrap">
             <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
             <!-- 지도타입 컨트롤 div 입니다 -->
@@ -177,6 +226,11 @@
                 <span onclick="zoomOut()"><img src="../img/map_minus.png" alt="축소"></span>
             </div>
         </div>
+
+
+
+
+        <!--*****map api script*****-->
         <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f6147d317a5d228a2ffa406394ac6564"></script>
         <script>
             var container = document.getElementById('map');
@@ -236,6 +290,12 @@
             <input type="button" class="btn1" id="btn1" value="주소복사" onclick="javascript:CopyUrl()">
             <input type="button" class="btn2" id="btn2" onclick="window.open('https://m.map.kakao.com/')" value="빠른 길 찾기">
         </div>
+        
+        
+        
+        
+        
+        <!--*****address*****-->
         <script>
             function CopyUrl() {
                 var Url = document.getElementById('btn1');
@@ -246,6 +306,17 @@
                 alert('주소를 복사했습니다');
             }
         </script>
+        <!--*****map api script*****-->
+
+
+
+
+
+
+
+
+
+
         <div class="accordion">
             <ul class="acc-wrap clearfix">
                 <li>
@@ -390,6 +461,14 @@
 
         </div>
     </div>
+
+
+
+
+
+
+
+
     <script>
         $(document).ready(function() {
 

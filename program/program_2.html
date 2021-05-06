@@ -8,14 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
     <meta property="og:title" content="인하대병원">
-    <meta property="og:url" content="./img/og_image.jpg">
+    <meta property="og:url" content="./../img/og_image.jpg">
     <meta property="og:image" content="?">
     <meta name="description" content="인하대학교의과대학부속병원에서는 환자들이 진료과, 전문클리닉, 전문센터의 의료진 정보를 통해 진료 예약을 할 수 있으며 인터넷증명서발급, 신규채용을 확인할수 있고 진료조회, 예약, 검사, 검진결과, 처방 등의 내역을 볼 수 있는 진료차트 서비스를 제공하고 있습니다.">
     <meta name="_csrf_parameter" content="_csrf">
     <meta name="_csrf_header" content="X-XSRF-TOKEN">
     <meta name="_csrf" content="912767d5-0c4d-4fdb-aec6-11fd1cb1e9d4">
-    <link rel="shortcut icon" href="../img/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="../img/i_favicon.png">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="../../img/i_favicon.png">
     <title>인하대병원 행동발달증진센터</title>
 
     <link rel="stylesheet" href="../css/common.css">
@@ -27,19 +27,41 @@
 </head>
 
 <body>
+
+
+
+    <!--sub-header-common-->
+
     <!--skip-navigation-->
     <a href="#contents" class="skip">본문바로가기</a>
-    <!--header 시작-->
+    <!--skip-navigation-->
+
+
+
+
+
+
+    <!--*****header 시작*****-->
     <header class="header clearfix">
         <h1 class="logo"><a href="./../index.html">인하대병원</a></h1>
-        <!-- <strong class="now">행동발달증진센터</strong>-->
+        <!--<strong class="now">행동발달증진센터</strong>-->
         <div class="header-right">
             <div class="ham">
                 <span class="ham1">메뉴</span>
             </div>
         </div>
     </header>
-    <!--aside-->
+    <!--*****header*****-->
+
+
+
+
+
+
+
+
+
+    <!--*****ham aside 시작*****-->
     <div id="aside">
         <div class="aside-wrap">
             <div class="aside">
@@ -72,13 +94,11 @@
                     <li>
                         <h2 class="sub-tit">공지사항</h2>
                         <ul class="depth2">
-                                <li><a href="./../border/border_1.html">공지사항</a></li>
+                            <li><a href="./../border/border_1.html">공지사항</a></li>
                             <li><a href="./../border/content_1.html">자료실</a></li>
                         </ul>
                     </li>
-
                 </ul>
-
             </div>
             <div class="inha">
                 <a href="https://www.inha.com/m/page/main" target="_blank">인하대병원 바로가기</a>
@@ -99,15 +119,18 @@
                 <ul class="infor2">
                     <li class="infor-tit">주소</li>
                     <li>인천광역시 중구 인항로 27(신흥동 3가 7-206) 인하대병원(우) 22332</li>
-                    <li><a href="./center/center_5.html" target="_blank">오시는길</a></li>
+                    <li><a href="./../center/center_5.html" target="_blank">오시는길</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <!--aside-script-->
+    <!--*****ham aside*****-->
+
+    <!--*****aside-script*****-->
     <script>
         $(document).ready(function() {
-   /*ham script*/
+            /*ham script*/
+            /*ham script*/
             $('.nav li').click(function() {
                 $(this).find('.depth2').toggleClass('on'); /*$(this).find('.depth2').stop().slideDown(300);*/
                 $(this).find('.sub-tit').toggleClass('on');
@@ -131,29 +154,53 @@
         $('.aside-wrap .a-list > li').mouseover(function() {
             $('.aside-wrap .a-list').find('li').addClass('on');
             $(this).siblings().removeClass('on');
+
         })
     </script>
-    <!--popup-->
+    <!--*****aside-script*****-->
+
+
+
+
+
+
+
+
+    <!--*****popup*****-->
     <div class="go-top">
         <a href="#">go-top</a>
     </div>
+
+    <!--*****popup-script*****-->
     <script>
         $(document).ready(function() {
             $(window).load(function() {
-                $('.go-top').fadeIn();
+                $('.go-top').fadeIn(300)
             })
 
         })
     </script>
+    <!--*****popup-script*****-->
+
+
+    <!--*****popup*****-->
     <div class="quick-location">
-        <a href="./center/center_5.html">오시는길</a>
+        <a href="./../center/center_5.html">오시는길</a>
     </div>
     <div class="quick-call">
         <a href="tel:032-890-1051" onclick="document.location.href='tel:032-890-1051'">고객센터</a>
     </div>
-    <!--popup-->
+    <!--*****popup*****-->
 
-    <!--main-->
+
+
+
+
+
+
+
+    <!--*****sub-main 시작*****-->
+    <!--*****sub-main*****-->
     <div class="location" onclick="location.href='./../index.html'">
         <h2 class="sub-m-tit">언어치료</h2>
     </div>
@@ -180,6 +227,11 @@
             <img src="../img/program_2.png" alt="언어치료">
         </p>
     </div>
+    <!--*****sub-main 시작*****-->
+    <!--*****sub-main*****-->
+    
+    
+    
 </body>
 
 </html>
