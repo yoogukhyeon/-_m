@@ -27,7 +27,7 @@ background-image: url(../img/aside.come.png); background-position: center center
 .schedule caption > ul {position: absolute; right: 0; top: -5px}
 .schedule caption > ul > li {float: left; padding: 5px }
 .schedule caption > ul > li::before {content: ""; display: inline-block; background-image: url(../img/schedule-icon1.png); background-repeat: no-repeat; background-position: center center; width: 18px; height: 18px; vertical-align: middle; transform: translateY(-1px); margin-right: 5px }
-.schedule caption > ul > li:nth-child(2)::before {background-image: url(../img/schedule-icon2.png); width: 26px; height: 24px; vertical-align: top;transform: translateY(0px)} 
+.schedule caption > ul > li:nth-child(2)::before {background-image: url(../img/schedule-icon2.png); width: 26px; height: 24px; vertical-align: top;transform: translateY(-1px); margin-right: 2px} 
 
 .schedule table tr{border: 1px solid #f0f0f0}
 .schedule table th {border: 1px solid #f0f0f0; padding: 20px 5px; vertical-align: middle}
@@ -103,7 +103,7 @@ background-image: url(../img/aside.come.png); background-position: center center
 .acc-wrap > li > .acc-tit:hover {background-color: #f8f8f8 }
 
 .acc-wrap .acc-location {background-color: #f8f8f8} 
-.acc-wrap .acc-location > li {position: relative; padding: 33px 10px 5px; line-height: 18px;  font-size: 12px;} 
+.acc-wrap .acc-location > li {position: relative; padding: 33px 10px 5px; line-height: 18px;  font-size: 12px; letter-spacing: 0.1px;} 
 .acc-wrap .acc-location > li .number {display: inline-block; min-width: 46px; height: 20px; line-height: 19px; color: #fff; font-size: 14px; border-radius: 10px; padding: 0 6px; width: auto; background-color: #0770bb;
     text-align: center; position: absolute; left: 10px; top: 8px
 } 
@@ -119,8 +119,8 @@ background-image: url(../img/aside.come.png); background-position: center center
 .acc-wrap .acc-location > li .number4 {background-color: #263c96;} 
 .acc-wrap .acc-location > li .number5 {background-color: #ffce33;}
 .acc-wrap .acc-location > li .number6 {background-color: #6f99d0;}
-.acc-wrap .acc-location > li .car {font-size: 14px; color: #333; background-color: transparent}  
-.acc-wrap .acc-location > .car-txt {color: #777; font-size: 12px;} 
+.acc-wrap .acc-location > li .car {font-size: 14px; color: #333; background-color: transparent;left: 5px}  
+.acc-wrap .acc-location > .car-txt {color: #777; font-size: 12px; } 
 
 /*notice*/
 .search-wrap {margin-bottom: 15px}

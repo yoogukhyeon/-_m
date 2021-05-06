@@ -132,7 +132,8 @@
 }
 .footer .f-infor {text-align: left; font-weight: lighter}
 .footer .f-infor li {line-height: 26px; height: 23px;
-    font-size: 14px; font-weight: lighter; color: #fff
+    font-size: 14px; font-weight: lighter; color: #fff;
+    letter-spacing: 0.1px
 }
 
 @media screen and (max-width: 620px){
