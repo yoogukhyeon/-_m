@@ -27,7 +27,7 @@ background-image: url(../img/aside.come.png); background-position: center center
 .schedule caption > ul {position: absolute; right: 0; top: -5px}
 .schedule caption > ul > li {float: left; padding: 5px }
 .schedule caption > ul > li::before {content: ""; display: inline-block; background-image: url(../img/schedule-icon1.png); background-repeat: no-repeat; background-position: center center; width: 18px; height: 18px; vertical-align: middle; transform: translateY(-1px); margin-right: 5px }
-.schedule caption > ul > li:nth-child(2)::before {background-image: url(../img/schedule-icon2.png); width: 26px; height: 24px; vertical-align: top;transform: translateY(-1px); margin-right: 2px} 
+.schedule caption > ul > li:nth-child(2)::before {background-image: url(../img/schedule-icon2.png); width: 26px; height: 24px; vertical-align: top;transform: translateY(-2px); margin-right: 2px} 
 
 .schedule table tr{border: 1px solid #f0f0f0}
 .schedule table th {border: 1px solid #f0f0f0; padding: 20px 5px; vertical-align: middle}
