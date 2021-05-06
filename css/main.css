@@ -140,7 +140,7 @@
     .swiper-button-play {left: 70%;transform: translateY(20%)} 
 } 
 @media screen and (max-width: 560px){
-    .swiper-container2 .swiper-pagination-bullet {width: 80px !important;}  
+    .swiper-container2 .swiper-pagination-bullet {width: 75px !important;}  
 } 
 @media screen and (max-width: 440px){
     .swiper-container2 .swiper-pagination-bullet {width: 60px !important}
