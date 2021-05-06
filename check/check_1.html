@@ -65,8 +65,8 @@
                     <li>
                         <h2 class="sub-tit">진단 및 치료</h2>
                         <ul class="depth2">
-                              <li><a href="./../border/border_1.html">의료진 시간표</a></li>
-                            <li><a href="./../border/content_1.html">진단 및 치료 절차</a></li>
+                              <li><a href="./check_1.html">의료진 시간표</a></li>
+                            <li><a href="./check_2.html">진단 및 치료 절차</a></li>
                         </ul>
                     </li>
                     <li>
@@ -129,11 +129,15 @@
             })
         });
         
-        $('.aside-wrap .a-list > li').mouseover(function(){
+          $('.aside-wrap .a-list > li').mouseover(function() {
             $('.aside-wrap .a-list').find('li').addClass('on');
-            $(this).siblings().removeClass('on');
-   
-        })
+          
+
+        });
+           $('.aside-wrap .a-list > li').mouseout(function() {
+             $(this).siblings().removeClass('on');
+
+        });
             
     </script>
     <!--popup-->

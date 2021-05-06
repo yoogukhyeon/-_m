@@ -210,10 +210,11 @@ border-radius: 50%;; text-indent: -9999px; position: relative}
 .aside-wrap .a-list > li {width: 49%; float: left; height: 34px; background-color: #fff; margin: 0.5% 0.5% 0.5% 0.5%; font-size: 12px; color: #777; font-weight: lighter}
 .aside-wrap .a-list > li.on {font-weight: bold; color: #0770bb; transition: all 0.3s ease-in-out}
 .aside-wrap .a-list > li>a {display: block; text-align: center; width: 100%; height: 34px; line-height: 34px; } 
-.a-infor {margin-top: 25px}
+.a-infor {margin-top: 25px; letter-spacing: 0.1px}
 .a-infor .infor-tit {font-size: 15px; font-weight: bold; color: #000; line-height: 21px; margin: 5px 0}
 .infor1 > li {font-size: 11px; line-height: 18px; font-weight: lighter; color: #777}
 .infor1 > li > span {color: #199da3; font-size: 12px; font-weight: normal}
+.infor2 {margin-top: 10px}
 .infor2 > li{font-size: 11px; line-height: 18px; font-weight: lighter; color: #777}
 .infor2 > li > a {text-decoration: underline; color: #0770bb; font-weight: bold; font-size: 12px}
 

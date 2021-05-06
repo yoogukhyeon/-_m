@@ -86,9 +86,9 @@
             </div>
             <div class="aside-list">
                 <ul class="a-list clearfix">
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">환자의권리와의무</a></li>
+                    <li><a href="./aggrement.html">개인정보처리방침</a></li>
+                    <li><a href="./policy.html">이용약관</a></li>
+                    <li><a href="./right.html">환자의권리와의무</a></li>
                     <li><a href="https://www.inha.com/site/bdc/main" target="_blank">PC버전 바로가기</a></li>
                 </ul>
             </div>
@@ -129,10 +129,16 @@
 
             })
         });
-        $('.aside-wrap .a-list > li').mouseover(function() {
+        
+          $('.aside-wrap .a-list > li').mouseover(function() {
             $('.aside-wrap .a-list').find('li').addClass('on');
-            $(this).siblings().removeClass('on');
-        })
+          
+
+        });
+           $('.aside-wrap .a-list > li').mouseout(function() {
+             $(this).siblings().removeClass('on');
+
+        });
     </script>
     <!--popup-->
     <div class="go-top">
@@ -197,7 +203,7 @@
 
     </div>
 
-    </div>
+   
 </body>
 
 </html>

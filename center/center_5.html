@@ -129,11 +129,15 @@
             })
         });
 
-        $('.aside-wrap .a-list > li').mouseover(function() {
+         $('.aside-wrap .a-list > li').mouseover(function() {
             $('.aside-wrap .a-list').find('li').addClass('on');
-            $(this).siblings().removeClass('on');
+          
 
-        })
+        });
+           $('.aside-wrap .a-list > li').mouseout(function() {
+             $(this).siblings().removeClass('on');
+
+        });
     </script>
     <!--popup-->
     <div class="go-top">
@@ -331,23 +335,22 @@
                         <li class="subway-txt">
                             <span class="number number4">1호선</span>
                             <!--<p class="subway">제물포역 또는 동인천역</p>-->
-                            제물포역, 동인천역 하차 후 버스 또는 택시 이용
+                            제물포역, 동인천역 하차 후 버스 또는 택시 이용 (택시 이용 시 요금 약 4,000원)
                         </li>
                         <li class="subway-txt">
                             <span class="number number4">1호선</span>
                             <!-- <p class="subway">제물포역 또는 동인천역</p>-->
-                            수인선 환승 (오이도역 방향)
+                            인천역 수인분당선 환승 (왕십리역 방향)
                         </li>
                         <li class="subway-txt">
                             <span class="number number5">수인분당선</span>
                             <!--<p class="subway">제물포역 또는 동인천역</p>-->
-                            숭의(인하대병원)역 2번출구
+                            숭의(인하대병원)역 2번출구로 나와서 도보 약 5분
                         </li>
                         <li class="subway-txt">
-                            <span class="number number6">인천 1호선</span>
+                            <span class="number number6">원인재역</span>
                             <!--    <p class="subway">제물포역 또는 동인천역</p>-->
-                            원인재역에서 수인분당선 환성
-
+                            수인분당선 환승 (인천역 방향)
                         </li>
                     </ul>
 
@@ -366,7 +369,7 @@
                         </li>
                         <li class="car-txt">
                             <span class="number car">성남, 분당방면</span>
-                            서울외곽순환고속도로 → 안현 분기점→ 제2경인고속도로 → 종점에서 우회전 → 제1경인고속도로 입구 → 좌회전하여 우측
+                            수도권 제1순환고속도로 → 안현 분기점 → 제2경인고속도로 → 종점에서 우회전 → 제1경인고속도로 입구 → 좌회전하여 우측
                         </li>
                         <li class="car-txt">
                             <span class="number car">안양, 안산방면</span>

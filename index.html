@@ -31,7 +31,13 @@
 <body class="body">
     <!--skip-navigation-->
     <a href="#contents" class="skip">본문바로가기</a>
-    <!--header 시작-->
+    <!--skip-navigation-->
+
+
+
+
+
+    <!--*****header 시작*****-->
     <header class="header clearfix">
         <h1 class="logo"><a href="./index.html">인하대병원</a></h1>
         <!-- <strong class="now">행동발달증진센터</strong>-->
@@ -41,7 +47,11 @@
             </div>
         </div>
     </header>
-    <!--aside-->
+    <!--*****header 시작*****-->
+
+
+
+    <!--*****ham aside*****-->
     <div id="aside">
         <div class="aside-wrap">
             <div class="aside">
@@ -96,7 +106,9 @@
             <div class="a-infor">
                 <ul class="infor1">
                     <li class="infor-tit">전화예약 및 문의</li>
-                    <li><span>032-890-200 / 1600-8114</span> (평일 09:00~ 17:30, 주말 및 공휴일 휴무)</li>
+                    <li><span>032-890-200 / 1600-8114</span></li>
+                    <li>평일 09:00 ~ 17:30</li>
+                    <li>주말 및 공휴일 휴무</li>
                 </ul>
                 <ul class="infor2">
                     <li class="infor-tit">주소</li>
@@ -106,7 +118,12 @@
             </div>
         </div>
     </div>
-    <!--aside-script-->
+    <!--*****ham aside*****-->
+    
+    
+    
+    
+    <!--*****aside-script*****-->
     <script>
         $(document).ready(function() {
             /*ham script*/
@@ -133,14 +150,29 @@
 
         $('.aside-wrap .a-list > li').mouseover(function() {
             $('.aside-wrap .a-list').find('li').addClass('on');
+
+
+        });
+        $('.aside-wrap .a-list > li').mouseout(function() {
             $(this).siblings().removeClass('on');
 
-        })
+        });
     </script>
-    <!--popup-->
+    <!--*****aside-script*****-->
+
+
+
+
+
+
+    <!--*****popup*****-->
     <div class="go-top">
         <a href="#">go-top</a>
     </div>
+    <!--*****popup*****-->
+
+
+    <!--*****popup-script*****-->
     <script>
         $(document).ready(function() {
             $(window).scroll(function() {
@@ -159,16 +191,28 @@
 
         })
     </script>
+    <!--*****popup-script*****-->
+
+    
+    
+    
+    <!--*****popup*****-->
     <div class="quick-location">
         <a href="./center/center_5.html">오시는길</a>
     </div>
     <div class="quick-call">
         <a href="tel:032-890-1051" onclick="document.location.href='tel:032-890-1051'">고객센터</a>
     </div>
-    <!--popup-->
+    <!--*****popup*****-->
 
-    <!--main-->
-    <!-- Swiper -->
+   
+   
+   
+   
+   
+    <!--*****main*****-->
+    
+     <!--*****main-slide*****-->
     <div class="swiper-container inner">
         <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="img/main01_m.png" alt=""></div>
@@ -189,17 +233,28 @@
         <div class="swiper-button-prev"></div>-->
         </div>
     </div>
-    <!--reservation-->
+    <!--*****main-slide*****-->
+  
+     
+     
+     
+    <!--*****reservation*****-->
     <div class="reser-wrap inner">
         <div class="reser-box">
             <h2 class="reser-tit tit">진료예약</h2>
             <ul class="reser-list">
-                <li>- 예약번호: 032-890-2000</li>
-                <li>- 행동발달증진센터: 032-890-1051</li>
+                <li>- 예약번호 : 032-890-2000</li>
+                <li>- 행동발달증진센터 : 032-890-1051</li>
             </ul>
         </div>
     </div>
-    <!--new&notice-->
+    <!--*****reservation*****-->
+    
+    
+    
+    
+    
+    <!--*****new & notice*****-->
     <div class="swiper-container2 inner" style="position: relative; max-width: 750px; overflow: hidden; height: 280px; background-color: #dededf; border-top-left-radius: 20px;    
     border-top-right-radius: 5px; border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;">
@@ -261,7 +316,12 @@
         <!-- Add Pagination -->
         <div class="swiper-pagination" style="position: absolute; left: 50%; transform:translateX(-50%); z-index: 9955; bottom: 13px"></div>
     </div>
-    <!--footer-->
+    <!--*****new & notice*****-->
+    
+    <!--*****main*****-->
+    
+    
+    <!--*****footer*****-->
     <footer class="footer inner">
         <div class="f-wrap ">
             <h2 class="f-tit">BDC (Behavioral Development Ctenter)</h2>
@@ -269,10 +329,15 @@
                 <li>TEL : 032-890-1051</li>
                 <li>TEL : 032-890-1051</li>
                 <li>E-mail : jwkim1208@inhauh.com</li>
-                <li>평일:08:30 ~ 17:30 토요일,공휴일 : 휴무</li>
+                <br>
+                <li>평일 : 08:30 ~ 17:30 </li>
+                <li>토요일, 공휴일 : 휴무</li>
             </ul>
         </div>
     </footer>
+    <!--*****footer*****-->
+    
+    
 </body>
 
 </html>
