@@ -168,10 +168,20 @@
     <div class="go-top">
         <a href="#">go-top</a>
     </div>
-    <script>
+     <script>
         $(document).ready(function() {
-            $(window).load(function() {
-                $('.go-top').fadeIn(300)
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 100) {
+                    $('.go-top').fadeIn();
+                } else {
+                    $('.go-top').fadeOut();
+                }
+            })
+            $('.go-top').click(function(e) {
+                e.preventDefault();
+                $('html , body').animate({
+                    scrollTop: 0
+                }, 500);
             })
 
         })
