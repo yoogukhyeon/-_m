@@ -129,11 +129,15 @@
             })
         });
         
-        $('.aside-wrap .a-list > li').mouseover(function(){
+          $('.aside-wrap .a-list > li').mouseover(function() {
             $('.aside-wrap .a-list').find('li').addClass('on');
-            $(this).siblings().removeClass('on');
-   
-        })
+          
+
+        });
+           $('.aside-wrap .a-list > li').mouseout(function() {
+             $(this).siblings().removeClass('on');
+
+        });
             
     </script>
     <!--popup-->
