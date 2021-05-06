@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
-    var swiper = new Swiper('.swiper-container', {
+        
+        
+    var sswiper = new Swiper('.swiper-container', {
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
@@ -15,18 +17,19 @@ $(document).ready(function(){
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+        
     });
-    /*slide-button*/
+      /*slide-button*/
       $(".swiper-button-pause").click(function(){
-                swiper.autoplay.stop();
-                $('.swiper-button-play').stop().show();
+                sswiper.autoplay.stop();
+                $(".swiper-button-play").stop().show();
                 $(".swiper-button-pause").stop().hide();
             });
 
             $(".swiper-button-play").click(function(){
-                swiper.autoplay.start();
+                sswiper.autoplay.start();
                 $(".swiper-button-pause").stop().show();
-                 $('.swiper-button-play').stop().hide();
+                 $(".swiper-button-play").stop().hide();
              
             }); 
  
