@@ -413,7 +413,7 @@
     width: 16px;
     height: 16px;
     position: absolute;
-    right: 5px;
+    right: 17px;
     top: 12px;
     cursor: pointer
 }
@@ -434,6 +434,7 @@
 
 .acc-wrap > li .acc-tit > a {
     width: 100%;
+    padding: 0 17px;
     display: block
 }
 
@@ -496,12 +497,13 @@
 
 .acc-wrap .subway {
     position: absolute;
-    left: 60px;
+    left: 95px;
     top: 7px;
     font-size: 14px;
     color: #333
 }
-
+.acc-wrap .subway1 {left: 75px}
+.acc-wrap .acc-location .sbuway {left: 75px}
 .acc-wrap .subway-txt {
     color: #777;
     font-size: 10px
